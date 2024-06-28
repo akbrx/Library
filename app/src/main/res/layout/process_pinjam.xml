@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bookloan.ProcessPinjamActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Book Image -->
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:contentDescription="Book Image" />
+
+        <!-- Book Title -->
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/bookImage"
+            android:layout_marginStart="16dp"
+            android:layout_alignTop="@id/bookImage" />
+
+        <!-- Book Description -->
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="231dp"
+            android:layout_height="146dp"
+            android:layout_below="@id/bookTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/bookImage"
+            android:text="Book Description" />
+
+        <!-- Borrower Section -->
+        <TextView
+            android:id="@+id/borrowerSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrower Information"
+            android:textStyle="bold"
+            android:layout_below="@id/bookImage"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/bookIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book ID"
+            android:layout_below="@id/borrowerSection"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="#EEEEEE"/>
+
+        <EditText
+            android:id="@+id/memberId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Borrower ID"
+            android:layout_below="@id/bookIdEditText"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="#EEEEEE"/>
+
+        <EditText
+            android:id="@+id/memberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_below="@id/memberId"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="#EEEEEE"/>
+
+        <EditText
+            android:id="@+id/returnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/memberName"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="#EEEEEE"/>
+
+        <!-- Loan Date -->
+        <TextView
+            android:id="@+id/loanDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Date"
+            android:textStyle="bold"
+            android:layout_below="@id/returnEmail"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/loanDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:layout_below="@id/loanDateLabel"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Return Date -->
+        <TextView
+            android:id="@+id/returnDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Date"
+            android:textStyle="bold"
+            android:layout_below="@id/loanDate"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/returnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/returnDateLabel"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="#EEEEEE" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/returnDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp" />
+    </RelativeLayout>
+</ScrollView>
