@@ -1,0 +1,18 @@
+[
+{
+    "nama" : "Fadlan",
+    "umur" : 19,
+    "NIM" : "12250113820",
+    "jurusan" : "Teknik Informatika",
+    "lulus" : false,
+    "hobby" : [
+        "Catur",
+        "Ngegame"
+    ],
+    "pa" : {
+        "pa1" : "ayam",
+        "pa2" : "kucing"
+    }
+
+}
+]
